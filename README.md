@@ -1,6 +1,7 @@
 # MFM-Chronos2-MOMENT
 
-This repository provides time-series forecasting experiments using **MOMENT** and **Chronos2**.
+This repository provides time-series forecasting experiments using **MOMENT** and **Chronos2**. Please run each time series foundation model within its appropriate virtual environment.
+
 
 - **MOMENT**: Zero-shot, Fine-tuning, Continual Learning
 - **Chronos2**: See: [Chronos2 README](/MFM/Chronos2/README.md)
