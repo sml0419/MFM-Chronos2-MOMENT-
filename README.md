@@ -1,6 +1,7 @@
 # MFM-Chronos2-MOMENT
 
-This repository provides time-series forecasting experiments using **MOMENT** and **Chronos2**. Please run each time series foundation model within its appropriate virtual environment.
+This repository provides time-series forecasting experiments using **MOMENT** and **Chronos2**. **Please run each time series foundation model within its appropriate virtual environment.** 
+Chronos is used with Minjun’s original code as-is, while MOMENT is based on Juyoung’s code with minor modifications.
 
 
 - **MOMENT**: Zero-shot, Fine-tuning, Continual Learning
@@ -8,7 +9,6 @@ This repository provides time-series forecasting experiments using **MOMENT** an
 
 ---
 ## MOMENT
----
 Before running experiments, please review the [default configuration options of MOMENT.](/MFM/moment/moment_cl/config.py)
 Below is an example command for execution
 ### **1. Zero-shot (no training)**
