@@ -6,9 +6,7 @@ This repository provides time-series forecasting experiments using **MOMENT** an
 - **Chronos2**: See: [Chronos2 README](/MFM/Chronos2/README.md)
 
 ---
-
 ## MOMENT
-
 ---
 
 ### **1. Zero-shot (no training)**
@@ -23,7 +21,7 @@ python moment_run.py \
   --experiment baseline \
   --result_dir result \
   --run_name moment_SAMYANG_zeroshot \
-  --seed 2026
+  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
 ```
 
 ---
@@ -42,7 +40,7 @@ python moment_run.py \
   --moment_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_finetune \
-  --seed 2026
+  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
 ```
 
 ---
@@ -63,7 +61,7 @@ python moment_run.py \
   --moment_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_clseq \
-  --seed 2026
+  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
 ```
 
 ---
@@ -86,7 +84,7 @@ python moment_run.py \
   --moment_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_clsoft \
-  --seed 2026
+  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
 ```
 
 ---
@@ -107,5 +105,7 @@ python moment_run.py \
   --moment_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_all \
-  --seed 2026
+  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
 ```
+
+
