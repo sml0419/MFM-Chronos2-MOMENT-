@@ -8,7 +8,8 @@ This repository provides time-series forecasting experiments using **MOMENT** an
 ---
 ## MOMENT
 ---
-
+Before running experiments, please review the [default configuration options of MOMENT.](/MFM/moment/moment_cl/config.py)
+Below is an example command for execution
 ### **1. Zero-shot (no training)**
 
 ```bash
