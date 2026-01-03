@@ -1,7 +1,7 @@
 # MFM-Chronos2-MOMENT
 
 This repository provides time-series forecasting experiments using **MOMENT** and **Chronos2**. **Please run each time series foundation model within its appropriate virtual environment.** 
-Chronos is used with Minjun’s original code as-is, while MOMENT is based on Juyoung’s code with minor modifications.
+Chronos is used with [Minjun’s chronos code](https://github.com/ssmjun/Industrial-Time-Series-Forecasting-with-Chronos-2) as-is, while MOMENT is based on [Juyoung’s code](https://github.com/Hasaero/Manufacturing-Foundation-Model) with minor modifications.
 
 
 - **MOMENT**: Zero-shot, Fine-tuning, Continual Learning
