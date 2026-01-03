@@ -1,0 +1,18 @@
+# Recommended Python >= 3.10
+
+# Core Data & ML
+torch>=2.0.0
+pandas
+numpy<2.0
+scikit-learn
+matplotlib
+
+# Hugging Face & Chronos
+transformers
+accelerate
+sentencepiece
+git+https://github.com/amazon-science/chronos-forecasting.git
+
+# Jupyter / Notebook support
+jupyter
+ipykernel
