@@ -3,7 +3,7 @@
 This repository provides time-series forecasting experiments using **MOMENT** and **Chronos2**.
 
 - **MOMENT**: Zero-shot, Fine-tuning, Continual Learning
-- **Chronos2**: See: [Chronos2 README](.MFM/Chronos2/README.md)
+- **Chronos2**: See: [Chronos2 README](/MFM/Chronos2/README.md)
 
 ---
 
