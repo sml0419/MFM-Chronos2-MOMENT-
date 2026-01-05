@@ -1,0 +1,58 @@
+# Experiment output log for experiment 3 (python chronos_run.py --use_chronos --use_covariates --use_cross_learning)
+
+############################################################
+👉 Running Experiment: 3. With Covariates, With Cross Learning
+############################################################
+
+
+============================================================
+Argument                       | Value
+------------------------------------------------------------
+data_dir                       | /home/minjunson/project/Chronos_2.0/Models/Dataset
+pretrain_files                 | ['ai4i2020.csv', 'IoT.csv', 'Steel_industry.csv']
+dataset                        | SAMYANG_dataset
+target                         | SATURATOR_ML_SUPPLY_F_PV.Value
+minute_interval                | 15
+seq_len                        | 512
+label_len                      | 0
+pred_len                       | 6
+model_name                     | Chronos
+learning_rate                  | 1e-06
+batch_size                     | 4
+num_steps                      | 400
+seed                           | 1
+device_num                     | 0
+use_chronos                    | True
+use_covariates                 | True
+use_cross_learning             | True
+cov_corr_threshold             | 0.5
+fine_tune                      | False
+continual_pretrain             | False
+============================================================
+
+Original shape: (122640, 27) from Dataset/SAMYANG_dataset.csv
+전체 샘플: 38,091개 (2021-04-30 이후)
+Outlier: 15,453개 (40.57%)
+Normal: 22,638개 (59.43%)
+Target: SATURATOR_ML_SUPPLY_F_PV.Value (index: 26)
+Date range: 2021-04-30 00:15:00 to 2022-05-31 18:45:00
+
+Train: 999 시퀀스 (79.98%)
+Validation: 126 시퀀스 (10.09%)
+Test: 124 시퀀스 (9.93%)
+총 유효 시퀀스: 1,249개
+Selecting covariates based on Training set correlation (per-sequence average)...
+Selected 4 covariates: ['SATURATOR1_CALCIUM_F.Value', 'SATURATOR2_PH_PV.Value', 'SATURATOR2_CALCIUM_F.Value', 'SATURATOR3_ST_TEMP.Value']
+              mse        rmse         mae
+count  124.000000  124.000000  124.000000
+mean    22.677649    3.967171    3.389276
+std     30.092109    2.644923    2.381760
+min      0.102744    0.320536    0.257295
+25%      4.572219    2.138261    1.705646
+50%     10.805367    3.286982    2.836287
+75%     29.514979    5.432748    4.519144
+max    163.280705   12.778134   12.354264
+Chronos-2 zero-shot inference completed.
+
+Generating plots for MSE quartiles (0%, 25%, 50%, 75%, 100%)...
+Saved plot to result/EX3_With_Covariates_With_Cross_Learning.png
