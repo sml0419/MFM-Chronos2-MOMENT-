@@ -90,7 +90,7 @@ python moment_run.py \
 
 ---
 
-### **4. Continual Learning – Soft-masking + Fine-tuning**
+### **5. Continual Learning – Soft-masking + Fine-tuning**
 
 ```bash
 python moment_run.py \
@@ -114,7 +114,7 @@ python moment_run.py \
 
 ---
 
-### **5. Run All Experiments**
+### **6. Run All Experiments**
 
 ```bash
 python moment_run.py \
