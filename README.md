@@ -34,7 +34,7 @@ python moment_run.py \
 ```bash
 python moment_run.py \
   --data_dir "/src/Dataset" \
-  --dataset "SAMYANG_dataset" \
+  --dataset "SAMYANG_dataset.csv" \
   --target "SATURATOR_ML_SUPPLY_F_PV.Value" \
   --minute_interval 15 \
   --seq_len 48 \
@@ -55,7 +55,7 @@ python moment_run.py \
 ```bash
 python moment_run.py \
   --data_dir "/src/Dataset" \
-  --dataset "SAMYANG_dataset" \
+  --dataset "SAMYANG_dataset.csv" \
   --target "SATURATOR_ML_SUPPLY_F_PV.Value" \
   --minute_interval 15 \
   --seq_len 48 \
@@ -75,7 +75,7 @@ python moment_run.py \
 ```bash
 python moment_run.py \
   --data_dir "/src/Dataset" \
-  --dataset "SAMYANG_dataset" \
+  --dataset "SAMYANG_dataset.csv" \
   --target "SATURATOR_ML_SUPPLY_F_PV.Value" \
   --minute_interval 15 \
   --seq_len 48 \
@@ -99,7 +99,7 @@ python moment_run.py \
 ```bash
 python moment_run.py \
   --data_dir "/src/Dataset" \
-  --dataset "SAMYANG_dataset" \
+  --dataset "SAMYANG_dataset.csv" \
   --target "SATURATOR_ML_SUPPLY_F_PV.Value" \
   --minute_interval 15 \
   --seq_len 48 \
@@ -124,7 +124,7 @@ python moment_run.py \
 ```bash
 python moment_run.py \
   --data_dir "/src/Dataset" \
-  --dataset "SAMYANG_dataset" \
+  --dataset "SAMYANG_dataset.csv" \
   --target "SATURATOR_ML_SUPPLY_F_PV.Value" \
   --minute_interval 15 \
   --seq_len 48 \
