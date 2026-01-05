@@ -16,7 +16,7 @@ Below is an example command for execution
 ```bash
 python moment_run.py \
   --data_dir "/src/Dataset" \
-  --dataset "SAMYANG_dataset" \
+  --dataset "SAMYANG_dataset.csv" \
   --target "SATURATOR_ML_SUPPLY_F_PV.Value" \
   --minute_interval 15 \
   --seq_len 48 \
@@ -45,7 +45,8 @@ python moment_run.py \
   --ft_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_finetune_target \
-  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
+  --seed 2026 \
+  --model_name "AutonLab/MOMENT-1-Large"
 ```
 
 ---
@@ -64,7 +65,8 @@ python moment_run.py \
   --ft_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_finetune_all \
-  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
+  --seed 2026 \
+  --model_name "AutonLab/MOMENT-1-Large"
 ```
 
 ---
@@ -79,13 +81,15 @@ python moment_run.py \
   --seq_len 48 \
   --pred_len 6 \
   --experiment sequential \
-  --pretrain_files ["ai4i2020.csv","IoT.csv","Steel_industry.csv"] \
-  --pretrain_epochs 2 \
+  --pretrain_files ai4i2020.csv IoT.csv Steel_industry.csv \
+  --pt_epochs 2 \
   --fine_tune \
   --ft_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_clseq \
-  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
+  --seed 2026 \
+  --model_name "AutonLab/MOMENT-1-Large"
+
 ```
 
 ---
@@ -101,15 +105,16 @@ python moment_run.py \
   --seq_len 48 \
   --pred_len 6 \
   --experiment soft_masking \
-  --pretrain_files ["ai4i2020.csv","IoT.csv","Steel_industry.csv"] \
+  --pretrain_files ai4i2020.csv IoT.csv Steel_industry.csv \
   --pt_epochs 2 \
   --importance_samples 1000 \
-  --layer_to_mask "head,mlp" \
   --fine_tune \
   --ft_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_clsoft \
-  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
+  --seed 2026 \
+  --model_name "AutonLab/MOMENT-1-Large"
+
 ```
 
 ---
@@ -125,13 +130,16 @@ python moment_run.py \
   --seq_len 48 \
   --pred_len 6 \
   --experiment all \
-  --pretrain_files ["ai4i2020.csv","IoT.csv","Steel_industry.csv"] \
+  --pretrain_files ai4i2020.csv IoT.csv Steel_industry.csv \
   --pt_epochs 2 \
   --fine_tune \
+  --ft_target_only \
   --ft_epochs 2 \
   --result_dir result \
   --run_name moment_SAMYANG_all \
-  --seed 2026 --model_name "AutonLab/MOMENT-1-Large"
+  --seed 2026 \
+  --model_name "AutonLab/MOMENT-1-Large"
+
 ```
 
 
